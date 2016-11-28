@@ -1,0 +1,17 @@
+digraph G {
+rankdir=UD;
+labelloc=t;
+label="0_1_m1408\nLandroid/app/Activity;
+onRestart()V";
+0[label="0: ENTRY v1-v1",shape=plaintext];
+1[label="{0|{1|0 (line=1072)|const/4 v0 [1]\l}}",shape=record, color=red];
+2[label="2|1|iput-boolean v0 v1 [0_1_f4398]\l0:Landroid/app/Activity;.mCalled\l",shape=record];
+3[label="3|3 (line=1073)|return-void []\l",shape=record];
+4[label="4: EXIT",shape=plaintext];
+0->1 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+1->2 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+2->3 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+3->4 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+0->2 [color=red, fontcolor=red, label="v1"];
+1->2 [color=red, fontcolor=red, label="v0"];
+}

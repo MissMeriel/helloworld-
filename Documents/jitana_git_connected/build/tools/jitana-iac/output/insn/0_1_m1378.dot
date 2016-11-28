@@ -1,0 +1,15 @@
+digraph G {
+rankdir=UD;
+labelloc=t;
+label="0_1_m1378\nLandroid/app/Activity;
+onCreatePanelView(I)Landroid/view/View;";
+0[label="0: ENTRY v1-v2",shape=plaintext];
+1[label="{0|{1|0 (line=2525)|const/4 v0 [0]\l}}",shape=record, color=red];
+2[label="2|1|return-object v0 []\l",shape=record];
+3[label="3: EXIT vR",shape=plaintext];
+0->1 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+1->2 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+2->3 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+1->2 [color=red, fontcolor=red, label="v0"];
+2->3 [color=red, fontcolor=red, label="vR"];
+}

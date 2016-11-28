@@ -1,0 +1,21 @@
+digraph G {
+rankdir=UD;
+labelloc=t;
+label="0_1_m8352\nLandroid/content/Context;
+unregisterComponentCallbacks(Landroid/content/ComponentCallbacks;)V";
+0[label="0: ENTRY v1-v2",shape=plaintext];
+1[label="{0|{1|0 (line=323)|invoke-virtual v1 [0_1_m8266]\l0:Landroid/content/Context;.getApplicationContext()Landroid/content/Context;\l}}",shape=record,URL="0_1_m8266.dot", color=red];
+2[label="2|3|move-result-object v0 vR []\l",shape=record];
+3[label="3|4|invoke-virtual v0 v2 [0_1_m8352]\l0:Landroid/content/Context;.unregisterComponentCallbacks(Landroid/content/ComponentCallbacks;)V\l",shape=record,URL="0_1_m8352.dot"];
+4[label="4|7 (line=324)|return-void []\l",shape=record];
+5[label="5: EXIT",shape=plaintext];
+0->1 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+1->2 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+2->3 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+3->4 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+4->5 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+0->1 [color=red, fontcolor=red, label="v1"];
+1->2 [color=red, fontcolor=red, label="vR"];
+0->3 [color=red, fontcolor=red, label="v2"];
+2->3 [color=red, fontcolor=red, label="v0"];
+}

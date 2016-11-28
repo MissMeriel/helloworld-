@@ -1,0 +1,6 @@
+digraph G {
+rankdir=RL;
+0[label="{0|SystemLoader}|../../../dex/framework/core.dex\l../../../dex/framework/framework.dex\l../../../dex/framework/framework2.dex\l../../../dex/framework/ext.dex\l../../../dex/framework/conscrypt.dex\l../../../dex/framework/okhttp.dex\l../../../dex/framework/core-junit.dex\l../../../dex/framework/android.test.runner.dex\l../../../dex/framework/android.policy.dex\l",shape=record,colorscheme=pastel19, style=filled, fillcolor=7];
+1[label="{1|com.example.refapp2}|extracted/refApp2/classes.dex\l",shape=record,colorscheme=pastel19, style=filled, fillcolor=8];
+1->0 [color=blue, fontcolor=blue, label=parent];
+}

@@ -1,0 +1,25 @@
+digraph G {
+rankdir=UD;
+labelloc=t;
+label="0_0_m2666\nLjava/lang/Object;
+equals(Ljava/lang/Object;)Z";
+0[label="0: ENTRY v1-v2",shape=plaintext];
+1[label="{0|{1|0 (line=191)|if-ne v1 v2 []\l}}",shape=record, color=red];
+2[label="{0|{2|2|const/4 v0 [1]\l}}",shape=record, color=red];
+3[label="3|3|return v0 []\l",shape=record];
+4[label="{0|{4|4|const/4 v0 [0]\l}}",shape=record, color=red];
+5[label="5|5|goto [-2]\l",shape=record];
+6[label="6: EXIT vR",shape=plaintext];
+0->1 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+1->4 [color=blue, fontcolor=blue,weight=10, taillabel="true"];
+1->2 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+2->3 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+3->6 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+4->5 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+5->3 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+0->1 [color=red, fontcolor=red, label="v1"];
+0->1 [color=red, fontcolor=red, label="v2"];
+2->3 [color=red, fontcolor=red, label="v0"];
+4->3 [color=red, fontcolor=red, label="v0"];
+3->6 [color=red, fontcolor=red, label="vR"];
+}

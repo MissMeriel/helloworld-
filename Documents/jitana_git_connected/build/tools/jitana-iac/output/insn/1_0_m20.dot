@@ -1,0 +1,14 @@
+digraph G {
+rankdir=UD;
+labelloc=t;
+label="1_0_m20\nLcom/example/refapp2/R;
+<init>()V";
+0[label="0: ENTRY v0-v0",shape=plaintext];
+1[label="{0|{1|0 (line=10)|invoke-direct v0 [1_0_m28]\l1:Ljava/lang/Object;.\<init\>()V\l}}",shape=record,URL="1_0_m28.dot", color=red];
+2[label="2|3|return-void []\l",shape=record];
+3[label="3: EXIT",shape=plaintext];
+0->1 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+1->2 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+2->3 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+0->1 [color=red, fontcolor=red, label="v0"];
+}

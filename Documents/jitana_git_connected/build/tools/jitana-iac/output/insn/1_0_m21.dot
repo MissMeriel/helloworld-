@@ -1,0 +1,22 @@
+digraph G {
+rankdir=UD;
+labelloc=t;
+label="1_0_m21\nLcom/example/refapp2/User;
+<init>(Ljava/lang/String;Ljava/lang/String;)V";
+0[label="0: ENTRY v0-v2",shape=plaintext];
+1[label="{0|{1|0 (line=8)|invoke-direct v0 [1_0_m28]\l1:Ljava/lang/Object;.\<init\>()V\l}}",shape=record,URL="1_0_m28.dot", color=red];
+2[label="2|3 (line=9)|iput-object v1 v0 [1_0_f17]\l1:Lcom/example/refapp2/User;.name\l",shape=record];
+3[label="3|5 (line=10)|iput-object v2 v0 [1_0_f18]\l1:Lcom/example/refapp2/User;.password\l",shape=record];
+4[label="4|7 (line=11)|return-void []\l",shape=record];
+5[label="5: EXIT",shape=plaintext];
+0->1 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+1->2 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+2->3 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+3->4 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+4->5 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+0->1 [color=red, fontcolor=red, label="v0"];
+0->2 [color=red, fontcolor=red, label="v0"];
+0->2 [color=red, fontcolor=red, label="v1"];
+0->3 [color=red, fontcolor=red, label="v0"];
+0->3 [color=red, fontcolor=red, label="v2"];
+}

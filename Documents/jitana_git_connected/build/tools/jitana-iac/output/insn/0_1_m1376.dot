@@ -1,0 +1,35 @@
+digraph G {
+rankdir=UD;
+labelloc=t;
+label="0_1_m1376\nLandroid/app/Activity;
+onCreateOptionsMenu(Landroid/view/Menu;)Z";
+0[label="0: ENTRY v1-v2",shape=plaintext];
+1[label="{0|{1|0 (line=2695)|iget-object v0 v1 [0_1_f4427]\l0:Landroid/app/Activity;.mParent\l}}",shape=record, color=red];
+2[label="2|2|if-eqz v0 []\l",shape=record];
+3[label="{0|{3|4 (line=2696)|iget-object v0 v1 [0_1_f4427]\l0:Landroid/app/Activity;.mParent\l}}",shape=record, color=red];
+4[label="4|6|invoke-virtual v0 v2 [0_1_m1376]\l0:Landroid/app/Activity;.onCreateOptionsMenu(Landroid/view/Menu;)Z\l",shape=record,URL="0_1_m1376.dot"];
+5[label="5|9|move-result v0 vR []\l",shape=record];
+6[label="6|10 (line=2698)|return v0 []\l",shape=record];
+7[label="{0|{7|11|const/4 v0 [1]\l}}",shape=record, color=red];
+8[label="8|12|goto [-2]\l",shape=record];
+9[label="9: EXIT vR",shape=plaintext];
+0->1 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+1->2 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+2->7 [color=blue, fontcolor=blue,weight=10, taillabel="true"];
+2->3 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+3->4 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+4->5 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+5->6 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+6->9 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+7->8 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+8->6 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+0->1 [color=red, fontcolor=red, label="v1"];
+1->2 [color=red, fontcolor=red, label="v0"];
+0->3 [color=red, fontcolor=red, label="v1"];
+0->4 [color=red, fontcolor=red, label="v2"];
+3->4 [color=red, fontcolor=red, label="v0"];
+4->5 [color=red, fontcolor=red, label="vR"];
+5->6 [color=red, fontcolor=red, label="v0"];
+7->6 [color=red, fontcolor=red, label="v0"];
+6->9 [color=red, fontcolor=red, label="vR"];
+}

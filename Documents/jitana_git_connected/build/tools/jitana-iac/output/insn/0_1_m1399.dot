@@ -1,0 +1,27 @@
+digraph G {
+rankdir=UD;
+labelloc=t;
+label="0_1_m1399\nLandroid/app/Activity;
+onPause()V";
+0[label="0: ENTRY v1-v1",shape=plaintext];
+1[label="{0|{1|0 (line=1287)|invoke-virtual v1 [0_1_m1301]\l0:Landroid/app/Activity;.getApplication()Landroid/app/Application;\l}}",shape=record,URL="0_1_m1301.dot", color=red];
+2[label="2|3|move-result-object v0 vR []\l",shape=record];
+3[label="3|4|invoke-virtual v0 v1 [0_1_m2565]\l0:Landroid/app/Application;.dispatchActivityPaused(Landroid/app/Activity;)V\l",shape=record,URL="0_1_m2565.dot"];
+4[label="4|7 (line=1288)|const/4 v0 [1]\l",shape=record];
+5[label="5|8|iput-boolean v0 v1 [0_1_f4398]\l0:Landroid/app/Activity;.mCalled\l",shape=record];
+6[label="6|10 (line=1289)|return-void []\l",shape=record];
+7[label="7: EXIT",shape=plaintext];
+0->1 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+1->2 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+2->3 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+3->4 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+4->5 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+5->6 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+6->7 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+0->1 [color=red, fontcolor=red, label="v1"];
+1->2 [color=red, fontcolor=red, label="vR"];
+0->3 [color=red, fontcolor=red, label="v1"];
+2->3 [color=red, fontcolor=red, label="v0"];
+0->5 [color=red, fontcolor=red, label="v1"];
+4->5 [color=red, fontcolor=red, label="v0"];
+}

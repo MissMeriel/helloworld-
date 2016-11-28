@@ -1,0 +1,38 @@
+digraph G {
+rankdir=UD;
+labelloc=t;
+label="0_1_m1409\nLandroid/app/Activity;
+onRestoreInstanceState(Landroid/os/Bundle;)V";
+0[label="0: ENTRY v2-v3",shape=plaintext];
+1[label="{0|{1|0 (line=941)|iget-object v1 v2 [0_1_f4443]\l0:Landroid/app/Activity;.mWindow\l}}",shape=record, color=red];
+2[label="2|2|if-eqz v1 []\l",shape=record];
+3[label="{0|{3|4 (line=942)|const-string v1 [android:viewHierarchyState]\l}}",shape=record, color=red];
+4[label="4|6|invoke-virtual v3 v1 [0_1_m30395]\l0:Landroid/os/Bundle;.getBundle(Ljava/lang/String;)Landroid/os/Bundle;\l",shape=record,URL="0_1_m30395.dot"];
+5[label="5|9|move-result-object v0 vR []\l",shape=record];
+6[label="6|10 (line=943)|if-eqz v0 []\l",shape=record];
+7[label="{0|{7|12|iget-object v1 v2 [0_1_f4443]\l0:Landroid/app/Activity;.mWindow\l}}",shape=record, color=red];
+8[label="8|14|invoke-virtual v1 v0 [0_1_m46432]\l0:Landroid/view/Window;.restoreHierarchyState(Landroid/os/Bundle;)V\l",shape=record,URL="0_1_m46432.dot"];
+9[label="{0|{9|17|return-void []\l}}",shape=record, color=red];
+10[label="10: EXIT",shape=plaintext];
+0->1 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+1->2 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+2->9 [color=blue, fontcolor=blue,weight=10, taillabel="true"];
+2->3 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+3->4 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+4->5 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+5->6 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+6->9 [color=blue, fontcolor=blue,weight=10, taillabel="true"];
+6->7 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+7->8 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+8->9 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+9->10 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+0->1 [color=red, fontcolor=red, label="v2"];
+1->2 [color=red, fontcolor=red, label="v1"];
+0->4 [color=red, fontcolor=red, label="v3"];
+3->4 [color=red, fontcolor=red, label="v1"];
+4->5 [color=red, fontcolor=red, label="vR"];
+5->6 [color=red, fontcolor=red, label="v0"];
+0->7 [color=red, fontcolor=red, label="v2"];
+5->8 [color=red, fontcolor=red, label="v0"];
+7->8 [color=red, fontcolor=red, label="v1"];
+}

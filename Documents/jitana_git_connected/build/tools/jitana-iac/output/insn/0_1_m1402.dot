@@ -1,0 +1,15 @@
+digraph G {
+rankdir=UD;
+labelloc=t;
+label="0_1_m1402\nLandroid/app/Activity;
+onPrepareDialog(ILandroid/app/Dialog;)V";
+0[label="0: ENTRY v0-v2",shape=plaintext];
+1[label="{0|{1|0 (line=3032)|invoke-virtual v2 v0 [0_1_m3242]\l0:Landroid/app/Dialog;.setOwnerActivity(Landroid/app/Activity;)V\l}}",shape=record,URL="0_1_m3242.dot", color=red];
+2[label="2|3 (line=3033)|return-void []\l",shape=record];
+3[label="3: EXIT",shape=plaintext];
+0->1 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+1->2 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+2->3 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+0->1 [color=red, fontcolor=red, label="v0"];
+0->1 [color=red, fontcolor=red, label="v2"];
+}

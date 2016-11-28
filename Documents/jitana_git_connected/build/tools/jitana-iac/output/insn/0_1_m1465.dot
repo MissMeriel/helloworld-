@@ -1,0 +1,35 @@
+digraph G {
+rankdir=UD;
+labelloc=t;
+label="0_1_m1465\nLandroid/app/Activity;
+setProgressBarIndeterminate(Z)V";
+0[label="0: ENTRY v3-v4",shape=plaintext];
+1[label="{0|{1|0 (line=4634)|invoke-virtual v3 [0_1_m1337]\l0:Landroid/app/Activity;.getWindow()Landroid/view/Window;\l}}",shape=record,URL="0_1_m1337.dot", color=red];
+2[label="2|3|move-result-object v1 vR []\l",shape=record];
+3[label="3|4|const/4 v2 [2]\l",shape=record];
+4[label="4|5|if-eqz v4 []\l",shape=record];
+5[label="{0|{5|7|const/4 v0 [-3]\l}}",shape=record, color=red];
+6[label="6|8|invoke-virtual v1 v2 v0 [0_1_m46454]\l0:Landroid/view/Window;.setFeatureInt(II)V\l",shape=record,URL="0_1_m46454.dot"];
+7[label="7|11 (line=4636)|return-void []\l",shape=record];
+8[label="{0|{8|12 (line=4634)|const/4 v0 [-4]\l}}",shape=record, color=red];
+9[label="9|13|goto [-5]\l",shape=record];
+10[label="10: EXIT",shape=plaintext];
+0->1 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+1->2 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+2->3 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+3->4 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+4->8 [color=blue, fontcolor=blue,weight=10, taillabel="true"];
+4->5 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+5->6 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+6->7 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+7->10 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+8->9 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+9->6 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+0->1 [color=red, fontcolor=red, label="v3"];
+1->2 [color=red, fontcolor=red, label="vR"];
+0->4 [color=red, fontcolor=red, label="v4"];
+2->6 [color=red, fontcolor=red, label="v1"];
+3->6 [color=red, fontcolor=red, label="v2"];
+5->6 [color=red, fontcolor=red, label="v0"];
+8->6 [color=red, fontcolor=red, label="v0"];
+}

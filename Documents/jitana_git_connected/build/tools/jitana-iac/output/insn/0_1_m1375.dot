@@ -1,0 +1,15 @@
+digraph G {
+rankdir=UD;
+labelloc=t;
+label="0_1_m1375\nLandroid/app/Activity;
+onCreateNavigateUpTaskStack(Landroid/app/TaskStackBuilder;)V";
+0[label="0: ENTRY v0-v1",shape=plaintext];
+1[label="{0|{1|0 (line=2837)|invoke-virtual v1 v0 [0_1_m5340]\l0:Landroid/app/TaskStackBuilder;.addParentStack(Landroid/app/Activity;)Landroid/app/TaskStackBuilder;\l}}",shape=record,URL="0_1_m5340.dot", color=red];
+2[label="2|3 (line=2838)|return-void []\l",shape=record];
+3[label="3: EXIT",shape=plaintext];
+0->1 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+1->2 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+2->3 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+0->1 [color=red, fontcolor=red, label="v0"];
+0->1 [color=red, fontcolor=red, label="v1"];
+}

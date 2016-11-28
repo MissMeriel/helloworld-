@@ -1,0 +1,21 @@
+digraph G {
+rankdir=UD;
+labelloc=t;
+label="1_0_m10\nLcom/example/refapp2/MainActivity;
+onCreate(Landroid/os/Bundle;)V";
+0[label="0: ENTRY v1-v2",shape=plaintext];
+1[label="{0|{1|0 (line=32)|invoke-super v1 v2 [1_0_m1]\l1:Landroid/app/Activity;.onCreate(Landroid/os/Bundle;)V\l}}",shape=record,URL="1_0_m1.dot", color=red];
+2[label="2|3 (line=33)|const/high16 v0 [2130903040]\l",shape=record];
+3[label="3|5|invoke-virtual v1 v0 [1_0_m11]\l1:Lcom/example/refapp2/MainActivity;.setContentView(I)V\l",shape=record,URL="1_0_m11.dot"];
+4[label="4|8 (line=34)|return-void []\l",shape=record];
+5[label="5: EXIT",shape=plaintext];
+0->1 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+1->2 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+2->3 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+3->4 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+4->5 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+0->1 [color=red, fontcolor=red, label="v1"];
+0->1 [color=red, fontcolor=red, label="v2"];
+0->3 [color=red, fontcolor=red, label="v1"];
+2->3 [color=red, fontcolor=red, label="v0"];
+}

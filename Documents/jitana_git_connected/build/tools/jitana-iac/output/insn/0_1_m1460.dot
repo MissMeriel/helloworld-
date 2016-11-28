@@ -1,0 +1,29 @@
+digraph G {
+rankdir=UD;
+labelloc=t;
+label="0_1_m1460\nLandroid/app/Activity;
+setImmersive(Z)V";
+1, 2, 3, 4 -> 6 [label="0_1_t2950", color=darkgreen, style=dotted];
+0[label="0: ENTRY v2-v3",shape=plaintext];
+1[label="{0|{1|0 (line=4972)|invoke-static [0_1_m1743]\l0:Landroid/app/ActivityManagerNative;.getDefault()Landroid/app/IActivityManager;\l}}",shape=record,URL="0_1_m1743.dot", color=red];
+2[label="2|3|move-result-object v0 vR []\l",shape=record];
+3[label="3|4|iget-object v1 v2 [0_1_f4438]\l0:Landroid/app/Activity;.mToken\l",shape=record];
+4[label="4|6|invoke-interface v0 v1 v3 [0_1_m3853]\l0:Landroid/app/IActivityManager;.setImmersive(Landroid/os/IBinder;Z)V\l",shape=record,URL="0_1_m3853.dot"];
+5[label="5|9 (line=4976)|return-void []\l",shape=record];
+6[label="6|10 (line=4973)|move-exception v0 vE []\l",shape=record];
+7[label="7|11|goto [-2]\l",shape=record];
+8[label="8: EXIT",shape=plaintext];
+0->1 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+1->2 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+2->3 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+3->4 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+4->5 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+5->8 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+6->7 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+7->5 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+1->2 [color=red, fontcolor=red, label="vR"];
+0->3 [color=red, fontcolor=red, label="v2"];
+0->4 [color=red, fontcolor=red, label="v3"];
+2->4 [color=red, fontcolor=red, label="v0"];
+3->4 [color=red, fontcolor=red, label="v1"];
+}

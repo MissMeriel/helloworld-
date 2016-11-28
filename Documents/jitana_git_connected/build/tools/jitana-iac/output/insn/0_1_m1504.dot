@@ -1,0 +1,23 @@
+digraph G {
+rankdir=UD;
+labelloc=t;
+label="0_1_m1504\nLandroid/app/Activity;
+startNextMatchingActivity(Landroid/content/Intent;)Z";
+0[label="0: ENTRY v1-v2",shape=plaintext];
+1[label="{0|{1|0 (line=3828)|const/4 v0 [0]\l}}",shape=record, color=red];
+2[label="2|1|invoke-virtual v1 v2 v0 [0_1_m1505]\l0:Landroid/app/Activity;.startNextMatchingActivity(Landroid/content/Intent;Landroid/os/Bundle;)Z\l",shape=record,URL="0_1_m1505.dot"];
+3[label="3|4|move-result v0 vR []\l",shape=record];
+4[label="4|5|return v0 []\l",shape=record];
+5[label="5: EXIT vR",shape=plaintext];
+0->1 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+1->2 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+2->3 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+3->4 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+4->5 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+0->2 [color=red, fontcolor=red, label="v1"];
+0->2 [color=red, fontcolor=red, label="v2"];
+1->2 [color=red, fontcolor=red, label="v0"];
+2->3 [color=red, fontcolor=red, label="vR"];
+3->4 [color=red, fontcolor=red, label="v0"];
+4->5 [color=red, fontcolor=red, label="vR"];
+}

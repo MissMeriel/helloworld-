@@ -1,0 +1,23 @@
+digraph G {
+rankdir=UD;
+labelloc=t;
+label="0_1_m1475\nLandroid/app/Activity;
+setTitleColor(I)V";
+0[label="0: ENTRY v1-v2",shape=plaintext];
+1[label="{0|{1|0 (line=4571)|iput v2 v1 [0_1_f4436]\l0:Landroid/app/Activity;.mTitleColor\l}}",shape=record, color=red];
+2[label="2|2 (line=4572)|iget-object v0 v1 [0_1_f4435]\l0:Landroid/app/Activity;.mTitle\l",shape=record];
+3[label="3|4|invoke-virtual v1 v0 v2 [0_1_m1417]\l0:Landroid/app/Activity;.onTitleChanged(Ljava/lang/CharSequence;I)V\l",shape=record,URL="0_1_m1417.dot"];
+4[label="4|7 (line=4573)|return-void []\l",shape=record];
+5[label="5: EXIT",shape=plaintext];
+0->1 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+1->2 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+2->3 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+3->4 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+4->5 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+0->1 [color=red, fontcolor=red, label="v1"];
+0->1 [color=red, fontcolor=red, label="v2"];
+0->2 [color=red, fontcolor=red, label="v1"];
+0->3 [color=red, fontcolor=red, label="v1"];
+0->3 [color=red, fontcolor=red, label="v2"];
+2->3 [color=red, fontcolor=red, label="v0"];
+}

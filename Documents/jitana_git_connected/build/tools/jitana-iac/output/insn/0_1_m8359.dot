@@ -1,0 +1,24 @@
+digraph G {
+rankdir=UD;
+labelloc=t;
+label="0_1_m8359\nLandroid/content/ContextWrapper;
+checkCallingOrSelfUriPermission(Landroid/net/Uri;I)I";
+0[label="0: ENTRY v1-v3",shape=plaintext];
+1[label="{0|{1|0 (line=597)|iget-object v0 v1 [0_1_f8153]\l0:Landroid/content/ContextWrapper;.mBase\l}}",shape=record, color=red];
+2[label="2|2|invoke-virtual v0 v2 v3 [0_1_m8244]\l0:Landroid/content/Context;.checkCallingOrSelfUriPermission(Landroid/net/Uri;I)I\l",shape=record,URL="0_1_m8244.dot"];
+3[label="3|5|move-result v0 vR []\l",shape=record];
+4[label="4|6|return v0 []\l",shape=record];
+5[label="5: EXIT vR",shape=plaintext];
+0->1 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+1->2 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+2->3 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+3->4 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+4->5 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+0->1 [color=red, fontcolor=red, label="v1"];
+0->2 [color=red, fontcolor=red, label="v2"];
+0->2 [color=red, fontcolor=red, label="v3"];
+1->2 [color=red, fontcolor=red, label="v0"];
+2->3 [color=red, fontcolor=red, label="vR"];
+3->4 [color=red, fontcolor=red, label="v0"];
+4->5 [color=red, fontcolor=red, label="vR"];
+}

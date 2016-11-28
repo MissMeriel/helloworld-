@@ -1,0 +1,19 @@
+digraph G {
+rankdir=UD;
+labelloc=t;
+label="0_1_m1436\nLandroid/app/Activity;
+performSaveInstanceState(Landroid/os/Bundle;)V";
+0[label="0: ENTRY v0-v1",shape=plaintext];
+1[label="{0|{1|0 (line=1153)|invoke-virtual v0 v1 [0_1_m1413]\l0:Landroid/app/Activity;.onSaveInstanceState(Landroid/os/Bundle;)V\l}}",shape=record,URL="0_1_m1413.dot", color=red];
+2[label="2|3 (line=1154)|invoke-direct v0 v1 [0_1_m1448]\l0:Landroid/app/Activity;.saveManagedDialogs(Landroid/os/Bundle;)V\l",shape=record,URL="0_1_m1448.dot"];
+3[label="3|6 (line=1156)|return-void []\l",shape=record];
+4[label="4: EXIT",shape=plaintext];
+0->1 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+1->2 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+2->3 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+3->4 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+0->1 [color=red, fontcolor=red, label="v0"];
+0->1 [color=red, fontcolor=red, label="v1"];
+0->2 [color=red, fontcolor=red, label="v0"];
+0->2 [color=red, fontcolor=red, label="v1"];
+}

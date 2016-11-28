@@ -1,0 +1,24 @@
+digraph G {
+rankdir=UD;
+labelloc=t;
+label="0_1_m1414\nLandroid/app/Activity;
+onSearchRequested()Z";
+0[label="0: ENTRY v2-v2",shape=plaintext];
+1[label="{0|{1|0|const/4 v1 [0]\l}}",shape=record, color=red];
+2[label="2|1|const/4 v0 [0]\l",shape=record];
+3[label="3|2 (line=3219)|invoke-virtual v2 v1 v0 v1 v0 [0_1_m1506]\l0:Landroid/app/Activity;.startSearch(Ljava/lang/String;ZLandroid/os/Bundle;Z)V\l",shape=record,URL="0_1_m1506.dot"];
+4[label="4|5 (line=3220)|const/4 v0 [1]\l",shape=record];
+5[label="5|6|return v0 []\l",shape=record];
+6[label="6: EXIT vR",shape=plaintext];
+0->1 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+1->2 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+2->3 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+3->4 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+4->5 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+5->6 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+0->3 [color=red, fontcolor=red, label="v2"];
+1->3 [color=red, fontcolor=red, label="v1"];
+2->3 [color=red, fontcolor=red, label="v0"];
+4->5 [color=red, fontcolor=red, label="v0"];
+5->6 [color=red, fontcolor=red, label="vR"];
+}

@@ -1,0 +1,38 @@
+digraph G {
+rankdir=UD;
+labelloc=t;
+label="0_1_m1474\nLandroid/app/Activity;
+setTitle(Ljava/lang/CharSequence;)V";
+0[label="0: ENTRY v1-v2",shape=plaintext];
+1[label="{0|{1|0 (line=4552)|iput-object v2 v1 [0_1_f4435]\l0:Landroid/app/Activity;.mTitle\l}}",shape=record, color=red];
+2[label="2|2 (line=4553)|iget v0 v1 [0_1_f4436]\l0:Landroid/app/Activity;.mTitleColor\l",shape=record];
+3[label="3|4|invoke-virtual v1 v2 v0 [0_1_m1417]\l0:Landroid/app/Activity;.onTitleChanged(Ljava/lang/CharSequence;I)V\l",shape=record,URL="0_1_m1417.dot"];
+4[label="4|7 (line=4555)|iget-object v0 v1 [0_1_f4427]\l0:Landroid/app/Activity;.mParent\l",shape=record];
+5[label="5|9|if-eqz v0 []\l",shape=record];
+6[label="{0|{6|11 (line=4556)|iget-object v0 v1 [0_1_f4427]\l0:Landroid/app/Activity;.mParent\l}}",shape=record, color=red];
+7[label="7|13|invoke-virtual v0 v1 v2 [0_1_m1365]\l0:Landroid/app/Activity;.onChildTitleChanged(Landroid/app/Activity;Ljava/lang/CharSequence;)V\l",shape=record,URL="0_1_m1365.dot"];
+8[label="{0|{8|16 (line=4558)|return-void []\l}}",shape=record, color=red];
+9[label="9: EXIT",shape=plaintext];
+0->1 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+1->2 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+2->3 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+3->4 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+4->5 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+5->8 [color=blue, fontcolor=blue,weight=10, taillabel="true"];
+5->6 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+6->7 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+7->8 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+8->9 [color=blue, fontcolor=blue,weight=100, taillabel=""];
+0->1 [color=red, fontcolor=red, label="v1"];
+0->1 [color=red, fontcolor=red, label="v2"];
+0->2 [color=red, fontcolor=red, label="v1"];
+0->3 [color=red, fontcolor=red, label="v1"];
+0->3 [color=red, fontcolor=red, label="v2"];
+2->3 [color=red, fontcolor=red, label="v0"];
+0->4 [color=red, fontcolor=red, label="v1"];
+4->5 [color=red, fontcolor=red, label="v0"];
+0->6 [color=red, fontcolor=red, label="v1"];
+0->7 [color=red, fontcolor=red, label="v1"];
+0->7 [color=red, fontcolor=red, label="v2"];
+6->7 [color=red, fontcolor=red, label="v0"];
+}

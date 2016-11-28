@@ -1,0 +1,8 @@
+digraph G {
+	graph [rankdir=TD];
+	1	 [colorscheme=pastel19,
+		fillcolor=8,
+		label="{1|com.example.refapp2}",
+		shape=record,
+		style=filled];
+}
